@@ -72,8 +72,9 @@ def make_dataset(all_data, diff=False):
     scaler = None
     if not diff:
         scaler = preprocessing.StandardScaler()
-        all_data = np.array(all_data)
+        all_data = np.array(all_data).transpose()
         all_data = scaler.fit_transform(all_data)
+        all_data = all_data.transpose()
         all_data = all_data.tolist()
     for feature_idx in range(len(all_data)):
         feature_ele = all_data[feature_idx]
