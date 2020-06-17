@@ -1,6 +1,6 @@
 import tushare as ts
 
-ts.set_token('66b40e5fd57c190c72fbf1d755598934d2fce80ee978e4c5610d66be')
+ts.set_token('hhhhhhhhh')
 pro = ts.pro_api()
 #print(ts.get_sz50s().code[0])
 
