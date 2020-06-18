@@ -15,3 +15,6 @@ y_tot_all和y_pred_all为维数=[458, 22]的np.array，其中y_tot_all表示测�
 y_tot_all = scaler.inverse_transform(y_tot_all)
 y_pred_all = scaler.inverse_transform(y_pred_all)
 val_loss = math.sqrt(np.sum((y_pred_all - y_tot_all)**2) / (y_pred_all.shape[0] * y_pred_all.shape[1]))
+
+
+这里上传的代码，覆盖在群里发的zip文件里的代码中。无需重新爬数据。
